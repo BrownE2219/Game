@@ -29,7 +29,7 @@ document.querySelector('.btn-hold').addEventListener('click',function(){
     //Updatae theUI
     document.querySelector('#score-'+activePlayer).textContent = scores[activePlayer];
     //check if the player win the Game
-    if(scores[activePlayer] >=100){
+    if(scores[activePlayer] >=20){
       document.querySelector('#name-'+activePlayer).textContent = 'Winner!';
       document.querySelector('.dice').style.display = 'none';
       document.querySelector('.player-'+activePlayer+'-panel').classList.add('winner');
@@ -49,11 +49,20 @@ function nextPlayer() {
   roundScore = 0;
   document.getElementById('current-0').textContent = '0';
   document.getElementById('current-1').textContent = '0';
- //document.querySelector('.player-0-panel').classList.remove('active');
-//document.querySelector('.player-1-panel').classList.add('active');
-document.querySelector('.player-0-panel').classList.toggle('active');
-document.querySelector('.player-1-panel').classList.toggle('active');
-document.querySelector('.dice').style.display = 'none';
+  //document.querySelector('.player-0-panel').classList.remove('active');
+  //document.querySelector('.player-1-panel').classList.add('active');
+  document.querySelector('.player-0-panel').classList.toggle('active');
+  document.querySelector('.player-1-panel').classList.toggle('active');
+  document.querySelector('.dice').style.display = 'none';
+  if(activePlayer === 1){
+    document.querySelector('.dice').style.left = "75%";
+    document.querySelector('.btn-roll').style.left = "75%";
+    document.querySelector('.btn-hold').style.left = "75%";
+  } else{
+    document.querySelector('.dice').style.left ="25%";
+    document.querySelector('.btn-roll').style.left = "25%";
+    document.querySelector('.btn-hold').style.left = "25%";
+  }
 }
 
 document.querySelector('.btn-new').addEventListener('click',init);
