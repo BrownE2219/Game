@@ -158,5 +158,5 @@ i {
     box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
 }
 
-.winner { background-color: #f7f7f7; }
+.winner {background-image: linear-gradient(to left, rgba(100,0,0,0), rgba(100,0,0,50)); }
 .winner .player-name { font-weight: 300; color: #EB4D4D; }

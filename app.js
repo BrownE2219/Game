@@ -29,7 +29,7 @@ document.querySelector('.btn-hold').addEventListener('click',function(){
     //Updatae theUI
     document.querySelector('#score-'+activePlayer).textContent = scores[activePlayer];
     //check if the player win the Game
-    if(scores[activePlayer] >=20){
+    if(scores[activePlayer] >=50){
       document.querySelector('#name-'+activePlayer).textContent = 'Winner!';
       document.querySelector('.dice').style.display = 'none';
       document.querySelector('.player-'+activePlayer+'-panel').classList.add('winner');
