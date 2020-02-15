@@ -87,6 +87,10 @@ function init(){
   document.querySelector('.player-1-panel').classList.remove('active');
   document.querySelector('.player-0-panel').classList.add('active');
 
+  document.querySelector('.btn-roll').style.left = "25%";
+  document.querySelector('.btn-hold').style.left = "25%";
+
+
 }
 //MDN site to learn event listner
 

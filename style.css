@@ -145,7 +145,7 @@ i {
     transition: margin 0.3s;
 }
 
-.btn-new { top: 45px;}
+.btn-new { top: 45px; font-weight:900;}
 .btn-roll { top: 95%; left: 25%;}
 .btn-hold { top: 85%; left: 25%;}
 
